@@ -1,0 +1,100 @@
+.box{
+    border-radius: 6px;
+    height: 60px;
+    width: 80px;
+    margin: 60px auto;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blueviolet;
+}
+
+.box:hover{
+    transform:scale(4) ;
+}
+.box2{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.circle1, .circle2, .circle3,
+.circle4, .circle5{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+.circle1{
+    background-color: mediumvioletred;
+    transition: all 3s ease ;
+    
+
+}
+.circle2{
+    background-color: orangered ;
+    transition: all 3s ease-in ;
+}
+.circle3{
+    background-color: green ;
+    transition: all 3s ease-in-out ;
+}
+.circle4{
+    background-color: darkgoldenrod ;
+    transition: all 3s ease-out ;
+}
+.circle5{
+    background-color: palevioletred;
+    transition: all 3s step-end ;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(300px);
+}
+
+.combinado{
+    background-color: deeppink;
+    height: 100px;
+    width: 100px;
+    margin: 60px auto;
+    transition: all 1s ;
+}
+
+.combinado:hover{
+    transform: rotate(720deg)  ;
+}
+
+.animaciones{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+.animaciones:hover{
+    animation: messi 4s;
+}
+@keyframes messi {
+    0%{
+        background-color: coral;
+    }
+    25%{
+        border-radius: 40%;
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: translate(100px);
+    }
+}
+
+
+
